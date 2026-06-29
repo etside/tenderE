@@ -1,0 +1,25 @@
+name: Daily Tender Scrape
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 6:00 AM Bangladesh time (UTC+6)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scrape real tenders from BD government ICT sites
+        run: python3 scraper.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "tenderE-bot"
+          git config user.email "bot@tendere"
+          git add tenders.json data.js
+          git diff --cached --quiet || (git commit -m "Daily scrape: $(date -u '+%Y-%m-%d')" && git push)

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Tenders – tenderE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">tender<span>E</span></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="tenders.html" class="active">All Tenders</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" title="Toggle dark mode">🌙</button>
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-panel">
+    <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+    <div class="nav-logo" style="color:#fff;margin-bottom:16px">tender<span>E</span></div>
+    <a href="index.html">🏠 Home</a>
+    <a href="tenders.html" class="active">📋 All Tenders</a>
+    <a href="tenders.html?cat=Works">🏗 Works</a>
+    <a href="tenders.html?cat=Goods">📦 Goods</a>
+    <a href="tenders.html?cat=Services">🛠 Services</a>
+    <a href="tenders.html?cat=Consulting">💼 Consulting</a>
+  </div>
+</div>
+
+<div style="background:var(--primary);color:#fff;padding:18px 24px">
+  <div style="max-width:1140px;margin:0 auto">
+    <h1 style="font-size:1.35rem;font-weight:700">All Tender Notices</h1>
+    <p style="font-size:.85rem;opacity:.8;margin-top:3px">Latest government procurement notices from Bangladesh</p>
+  </div>
+</div>
+
+<div class="listing-layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <h3>🔍 Filters</h3>
+
+    <div class="search-input-wrap">
+      <input type="text" id="fQuery" placeholder="Search tenders…" autocomplete="off">
+      <button class="search-clear" id="searchClear">✕</button>
+    </div>
+
+    <div class="filter-group">
+      <label>Category</label>
+      <select id="fCat">
+        <option>All</option>
+        <option>Software & Web</option>
+        <option>AI & Data</option>
+        <option>Consulting</option>
+        <option>ICT Infrastructure</option>
+        <option>ICT Services</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label>Source</label>
+      <select id="fDist">
+        <option>All Districts</option>
+        <option>Dhaka</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label>Organization</label>
+      <select id="fSource">
+        <option>All Sources</option>
+        <option>ICT Division (a2i)</option>
+        <option>BCC</option>
+        <option>BTRC</option>
+        <option>BTCL</option>
+        <option>DoICT</option>
+        <option>BHTPA</option>
+      </select>
+    </div>
+
+    <button class="btn-reset" onclick="resetFilters()">✕ Clear Filters</button>
+  </aside>
+
+  <!-- MAIN -->
+  <main>
+    <button class="filter-toggle" onclick="openMobileFilter()">⚙ Filters</button>
+
+    <div class="listing-header">
+      <h2 id="listingTitle">Tender Notices</h2>
+      <div class="listing-controls">
+        <select id="sortBy" onchange="applyFilters()">
+          <option value="newest">Newest First</option>
+          <option value="deadline">Deadline Soon</option>
+        </select>
+        <div class="view-toggle">
+          <button class="view-btn active" id="btnTable" onclick="setView('table')" title="Table view">☰</button>
+          <button class="view-btn" id="btnGrid" onclick="setView('grid')" title="Grid view">⊞</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-count" id="resultCount"></div>
+    <div id="tenderOutput"></div>
+    <div class="pagination" id="pagination"></div>
+  </main>
+</div>
+
+<!-- Mobile filter overlay -->
+<div class="mobile-filter-overlay" id="mobileFilterOverlay" onclick="closeMobileFilter()">
+  <div class="mobile-filter-panel" onclick="event.stopPropagation()">
+    <h3>🔍 Filter Tenders</h3>
+    <div class="filter-group">
+      <label>Category</label>
+      <select id="mfCat" onchange="syncMobileFilter()">
+        <option>All</option><option>Software & Web</option><option>AI & Data</option><option>Consulting</option><option>ICT Infrastructure</option><option>ICT Services</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Organization</label>
+      <select id="mfDist" onchange="syncMobileFilter()">
+        <option>All Districts</option><option>Dhaka</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Source</label>
+      <select id="mfSource" onchange="syncMobileFilter()">
+        <option>All Sources</option><option>ICT Division (a2i)</option><option>BCC</option><option>BTRC</option><option>BTCL</option><option>DoICT</option><option>BHTPA</option>
+      </select>
+    </div>
+    <button class="btn-filter" onclick="closeMobileFilter()">Apply Filters</button>
+    <button class="btn-reset" onclick="resetFilters();closeMobileFilter()">Clear All</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo">tender<span style="color:var(--accent)">E</span></div>
+      <p>Bangladesh's free tender notification portal.</p>
+    </div>
+    <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="tenders.html">All Tenders</a></li></ul></div>
+    <div><h4>Categories</h4><ul><li><a href="tenders.html?cat=Works">Works</a></li><li><a href="tenders.html?cat=Goods">Goods</a></li><li><a href="tenders.html?cat=Services">Services</a></li><li><a href="tenders.html?cat=Consulting">Consulting</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>📧 info@tendere.com.bd</li><li>📞 +880 1700-000000</li></ul></div>
+  </div>
+  <div class="footer-bottom">© 2026 tenderE. All rights reserved.</div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+  // Dark mode
+  const html = document.documentElement;
+  const themeBtn = document.getElementById("themeBtn");
+  if (localStorage.getItem("theme") === "dark") { html.setAttribute("data-theme","dark"); themeBtn.textContent = "☀️"; }
+  themeBtn.onclick = () => {
+    const dark = html.getAttribute("data-theme") === "dark";
+    html.setAttribute("data-theme", dark ? "light" : "dark");
+    themeBtn.textContent = dark ? "🌙" : "☀️";
+    localStorage.setItem("theme", dark ? "light" : "dark");
+  };
+
+  // Mobile nav
+  const mobileNav = document.getElementById("mobileNav");
+  document.getElementById("hamburger").onclick = () => mobileNav.classList.add("open");
+  document.getElementById("mobileNavClose").onclick = () => mobileNav.classList.remove("open");
+  mobileNav.addEventListener("click", e => { if (e.target === mobileNav) mobileNav.classList.remove("open"); });
+
+  const PAGE_SIZE = 10;
+  let currentPage = 1, results = [], currentView = "table";
+
+  function getFilters() {
+    return {
+      query: document.getElementById("fQuery").value,
+      category: document.getElementById("fCat").value,
+      district: document.getElementById("fDist").value,
+      source: document.getElementById("fSource").value,
+      sort: document.getElementById("sortBy").value,
+    };
+  }
+
+  function applyFilters() {
+    currentPage = 1;
+    results = filterTenders(getFilters());
+    const q = document.getElementById("fQuery").value;
+    document.getElementById("searchClear").style.display = q ? "block" : "none";
+    render();
+  }
+
+  function render() {
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const page = results.slice(start, start + PAGE_SIZE);
+    const out = document.getElementById("tenderOutput");
+
+    if (!results.length) {
+      out.innerHTML = `<div style="text-align:center;padding:48px;color:var(--muted)"><div style="font-size:3rem;margin-bottom:12px">🔍</div><p>No tenders found. Try adjusting your filters.</p></div>`;
+    } else if (currentView === "grid") {
+      out.innerHTML = `<div class="tender-grid">${page.map(renderCard).join("")}</div>`;
+    } else {
+      out.innerHTML = `<div style="overflow-x:auto"><table class="tender-table"><thead><tr>
+        <th>Title / Reference</th><th>Category</th><th>Organization</th><th>District</th><th>Published</th><th>Deadline</th><th></th>
+      </tr></thead><tbody>${page.map(renderRow).join("")}</tbody></table></div>`;
+    }
+
+    const total = results.length;
+    document.getElementById("resultCount").textContent = total
+      ? `Showing ${start+1}–${Math.min(start+PAGE_SIZE, total)} of ${total} tenders`
+      : "";
+    renderPagination();
+  }
+
+  function renderPagination() {
+    const total = Math.ceil(results.length / PAGE_SIZE);
+    const el = document.getElementById("pagination");
+    if (total <= 1) { el.innerHTML = ""; return; }
+    let html = "";
+    if (currentPage > 1) html += `<button onclick="goPage(${currentPage-1})">‹</button>`;
+    for (let i = Math.max(1,currentPage-2); i <= Math.min(total,currentPage+2); i++) {
+      html += `<button class="${i===currentPage?'active':''}" onclick="goPage(${i})">${i}</button>`;
+    }
+    if (currentPage < total) html += `<button onclick="goPage(${currentPage+1})">›</button>`;
+    el.innerHTML = html;
+  }
+
+  function goPage(p) { currentPage = p; render(); window.scrollTo(0,80); }
+
+  function setView(v) {
+    currentView = v;
+    document.getElementById("btnTable").classList.toggle("active", v === "table");
+    document.getElementById("btnGrid").classList.toggle("active", v === "grid");
+    render();
+  }
+
+  function resetFilters() {
+    ["fQuery","fCat","fDist","fSource"].forEach(id => {
+      const el = document.getElementById(id);
+      if (el.tagName === "SELECT") el.selectedIndex = 0;
+      else el.value = "";
+    });
+    document.getElementById("sortBy").selectedIndex = 0;
+    document.getElementById("searchClear").style.display = "none";
+    syncToMobile();
+    applyFilters();
+  }
+
+  function syncToMobile() {
+    document.getElementById("mfCat").value = document.getElementById("fCat").value;
+    document.getElementById("mfDist").value = document.getElementById("fDist").value;
+    document.getElementById("mfSource").value = document.getElementById("fSource").value;
+  }
+
+  function syncMobileFilter() {
+    document.getElementById("fCat").value = document.getElementById("mfCat").value;
+    document.getElementById("fDist").value = document.getElementById("mfDist").value;
+    document.getElementById("fSource").value = document.getElementById("mfSource").value;
+    applyFilters();
+  }
+
+  function openMobileFilter() { document.getElementById("mobileFilterOverlay").classList.add("open"); syncToMobile(); }
+  function closeMobileFilter() { document.getElementById("mobileFilterOverlay").classList.remove("open"); }
+
+  // Live search (no button needed)
+  document.getElementById("fQuery").addEventListener("input", applyFilters);
+  document.getElementById("fCat").addEventListener("change", applyFilters);
+  document.getElementById("fDist").addEventListener("change", applyFilters);
+  document.getElementById("fSource").addEventListener("change", applyFilters);
+  document.getElementById("searchClear").addEventListener("click", () => {
+    document.getElementById("fQuery").value = "";
+    document.getElementById("searchClear").style.display = "none";
+    applyFilters();
+  });
+
+  // URL params
+  const params = new URLSearchParams(location.search);
+  if (params.get("q")) { document.getElementById("fQuery").value = params.get("q"); document.getElementById("searchClear").style.display = "block"; }
+  if (params.get("cat")) document.getElementById("fCat").value = params.get("cat");
+
+  applyFilters();
+</script>
+</body>
+</html>

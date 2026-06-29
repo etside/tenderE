@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tender Detail – tenderE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">tender<span>E</span></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="tenders.html">All Tenders</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" title="Toggle dark mode">🌙</button>
+    <button class="hamburger" id="hamburger">☰</button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-panel">
+    <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+    <div class="nav-logo" style="color:#fff;margin-bottom:16px">tender<span>E</span></div>
+    <a href="index.html">🏠 Home</a>
+    <a href="tenders.html" class="active">📋 All Tenders</a>
+  </div>
+</div>
+
+<div class="detail-wrap">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">›</span>
+    <a href="tenders.html">Tenders</a>
+    <span class="sep">›</span>
+    <span id="breadTitle">Detail</span>
+  </div>
+  <div id="detailContent"></div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo">tender<span style="color:var(--accent)">E</span></div>
+      <p>Bangladesh's free tender notification portal.</p>
+    </div>
+    <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="tenders.html">All Tenders</a></li></ul></div>
+    <div><h4>Categories</h4><ul><li><a href="tenders.html?cat=Works">Works</a></li><li><a href="tenders.html?cat=Goods">Goods</a></li><li><a href="tenders.html?cat=Services">Services</a></li><li><a href="tenders.html?cat=Consulting">Consulting</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>📧 info@tendere.com.bd</li><li>📞 +880 1700-000000</li></ul></div>
+  </div>
+  <div class="footer-bottom">© 2026 tenderE. All rights reserved.</div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+  // Dark mode
+  const html = document.documentElement;
+  const themeBtn = document.getElementById("themeBtn");
+  if (localStorage.getItem("theme") === "dark") { html.setAttribute("data-theme","dark"); themeBtn.textContent = "☀️"; }
+  themeBtn.onclick = () => {
+    const dark = html.getAttribute("data-theme") === "dark";
+    html.setAttribute("data-theme", dark ? "light" : "dark");
+    themeBtn.textContent = dark ? "🌙" : "☀️";
+    localStorage.setItem("theme", dark ? "light" : "dark");
+  };
+
+  // Mobile nav
+  const mobileNav = document.getElementById("mobileNav");
+  document.getElementById("hamburger").onclick = () => mobileNav.classList.add("open");
+  document.getElementById("mobileNavClose").onclick = () => mobileNav.classList.remove("open");
+  mobileNav.addEventListener("click", e => { if (e.target === mobileNav) mobileNav.classList.remove("open"); });
+
+  const id = parseInt(new URLSearchParams(location.search).get("id"));
+  const t = TENDERS.find(x => x.id === id);
+
+  if (!t) {
+    document.getElementById("detailContent").innerHTML = `
+      <div style="text-align:center;padding:80px 24px;color:var(--muted)">
+        <div style="font-size:4rem;margin-bottom:16px">🔍</div>
+        <h2 style="margin-bottom:8px">Tender not found</h2>
+        <a href="tenders.html" class="btn-primary" style="display:inline-flex;margin-top:16px">← Back to Tenders</a>
+      </div>`;
+  } else {
+    document.title = t.title + " – tenderE";
+    document.getElementById("breadTitle").textContent = t.ref;
+
+    const d = daysLeft(t.deadline);
+    const alert = d < 0
+      ? `<div class="alert alert-danger">⚠ This tender has expired.</div>`
+      : d <= 5
+      ? `<div class="alert alert-warning">⚠ Deadline in ${d} day${d===1?'':'s'} — act quickly!</div>`
+      : "";
+
+    // Related tenders: same category, different id, max 4
+    const related = TENDERS.filter(x => x.category === t.category && x.id !== t.id).slice(0, 4);
+    const relatedHtml = related.length ? `
+      <div class="related-section">
+        <h3>Related Tenders (${t.category})</h3>
+        <div class="related-grid">
+          ${related.map(r => `
+          <div class="related-card">
+            <h4><a href="detail.html?id=${r.id}">${r.title}</a></h4>
+            <p>📍 ${r.district} &nbsp;·&nbsp; ${deadlineLabel(r.deadline)}</p>
+          </div>`).join("")}
+        </div>
+      </div>` : "";
+
+    document.getElementById("detailContent").innerHTML = `
+    <div class="detail-card">
+      ${alert}
+      <div class="detail-actions-top">
+        <button class="btn-action" onclick="window.print()">🖨 Print</button>
+        <button class="btn-action" onclick="shareThis()">🔗 Share</button>
+        <a href="tenders.html?cat=${encodeURIComponent(t.category)}" class="btn-action">📂 More ${t.category}</a>
+      </div>
+
+      <span class="card-badge ${badgeClass(t.category)}">${t.category}</span>
+      <h1>${t.title}</h1>
+
+      <div class="detail-meta">
+        <div class="meta-item"><label>Reference No.</label><span>${t.ref}</span></div>
+        <div class="meta-item"><label>Organization</label><span>${t.org}</span></div>
+        <div class="meta-item"><label>District</label><span>📍 ${t.district}</span></div>
+        <div class="meta-item"><label>Source</label><span>${t.source}</span></div>
+        <div class="meta-item"><label>Published</label><span>${t.date}</span></div>
+        <div class="meta-item"><label>Deadline</label><span style="font-weight:700;color:${d<0?'#c62828':d<=5?'#e65100':'var(--primary)'}">${t.deadline}</span></div>
+        <div class="meta-item"><label>Estimated Value</label><span style="font-weight:700;font-size:1.05rem">${t.value}</span></div>
+        <div class="meta-item"><label>Days Remaining</label><span>${d < 0 ? '<span style="color:#c62828">Expired</span>' : `<span style="color:var(--primary);font-weight:700">${d} days</span>`}</span></div>
+      </div>
+
+      <div class="detail-section">
+        <h3>About This Tender</h3>
+        <p>This procurement notice has been issued by <strong>${t.org}</strong> under the <strong>${t.category}</strong> category. Published on ${t.date}, bids must be submitted before <strong>${t.deadline}</strong>.</p>
+        <p style="margin-top:10px">Interested bidders should review all tender documents carefully and ensure compliance with the Public Procurement Act 2006 and relevant regulations before submitting.</p>
+      </div>
+
+      <div class="detail-section">
+        <h3>Eligibility Requirements</h3>
+        <ul>
+          <li>Valid trade license and TIN certificate</li>
+          <li>Relevant experience in ${t.category.toLowerCase()} contracts</li>
+          <li>Financial capacity as specified in tender documents</li>
+          <li>Registration with relevant professional bodies (if applicable)</li>
+          <li>No blacklisting by any government agency</li>
+        </ul>
+      </div>
+
+      <div class="detail-bottom-actions">
+        <a href="tenders.html" class="btn-outline">← Back to List</a>
+        <a href="tenders.html?cat=${encodeURIComponent(t.category)}" class="btn-primary">Browse ${t.category} Tenders</a>
+      </div>
+    </div>
+
+    ${relatedHtml}`;
+  }
+
+  function shareThis() {
+    if (navigator.share) {
+      navigator.share({ title: t?.title, url: location.href });
+    } else {
+      navigator.clipboard.writeText(location.href).then(() => alert("Link copied to clipboard!"));
+    }
+  }
+</script>
+</body>
+</html>
