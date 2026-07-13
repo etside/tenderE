@@ -1,5 +1,17 @@
 const TENDERS = [
   {
+    "title": "Notification of Award (NOA) for Procurement of IT retail equipments (Mouse, Keyboard, Pendrive etc.) for BTRC.",
+    "org": "Bangladesh Telecommunication Regulatory Commission",
+    "district": "Dhaka",
+    "date": "2026-07-12",
+    "source": "BTRC",
+    "source_url": "https://btrc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/6/a7b62abb-9054-4e08-8ddd-9803cd3f00aa.pdf",
+    "view_url": "",
+    "id": 1,
+    "category": "ICT Infrastructure"
+  },
+  {
     "title": "রবি আজিয়াটা লিঃ এর ইনফরমেশন সিস্টেম অডিট কার্যক্রম পরিচালনার লক্ষ্যে অডিট ফার্ম নিয়োগের উদ্দেশ্যে প্রাপ্ত আগ্রহব্যক্তকরণ দলিল (EOI) মূল্যায়ণ শেষে সংক্ষিপ্ত তালিকাভুক্তি প্রসঙ্গে।",
     "org": "Bangladesh Telecommunication Regulatory Commission",
     "district": "Dhaka",
@@ -8,7 +20,7 @@ const TENDERS = [
     "source_url": "https://btrc.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/6/fe955767-bd4e-46ff-b3bb-eb7368aef627.pdf",
     "view_url": "",
-    "id": 1,
+    "id": 2,
     "category": "Consulting"
   },
   {
@@ -20,7 +32,7 @@ const TENDERS = [
     "source_url": "https://bcc.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/6/e76f3b8a-b852-4759-9132-380c417db43e.pdf",
     "view_url": "",
-    "id": 2,
+    "id": 3,
     "category": "ICT Services"
   },
   {
@@ -32,7 +44,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2026/6/bb777c65-d2c2-46fd-b56b-98e80f72c08e.pdf",
     "view_url": "",
-    "id": 3,
+    "id": 4,
     "category": "AI & Data"
   },
   {
@@ -44,7 +56,7 @@ const TENDERS = [
     "source_url": "https://bcc.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/6/b86accf7-2851-4e00-a500-c67e33dcde19.pdf",
     "view_url": "",
-    "id": 4,
+    "id": 5,
     "category": "ICT Infrastructure"
   },
   {
@@ -56,7 +68,7 @@ const TENDERS = [
     "source_url": "https://btrc.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/6/7d88bd8f-07e4-4c17-915e-db1448655915.pdf",
     "view_url": "",
-    "id": 5,
+    "id": 6,
     "category": "ICT Infrastructure"
   },
   {
@@ -68,7 +80,7 @@ const TENDERS = [
     "source_url": "https://bcc.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/5/18f9e4db-599c-4079-a8cc-1964af57f97c.pdf",
     "view_url": "",
-    "id": 6,
+    "id": 7,
     "category": "AI & Data"
   },
   {
@@ -79,18 +91,6 @@ const TENDERS = [
     "source": "BTRC",
     "source_url": "https://btrc.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/6/634a7c25-c5e3-429f-a159-4eff01a7d6b2.pdf",
-    "view_url": "",
-    "id": 7,
-    "category": "Consulting"
-  },
-  {
-    "title": "Request for Expressions of Interest (REoI) for Selection of Individual Consultants for 2 Consultant positions.",
-    "org": "ICT Division / a2i",
-    "district": "Dhaka",
-    "date": "2026-06-28",
-    "source": "ICT Division (a2i)",
-    "source_url": "https://ictd.gov.bd/pages/tenders",
-    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2026/5/785ad78c-f799-41d7-8606-619e3d3a9381.pdf",
     "view_url": "",
     "id": 8,
     "category": "Consulting"
