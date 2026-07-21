@@ -180,18 +180,6 @@ const TENDERS = [
     "category": "Consulting"
   },
   {
-    "title": "Procurement of Goods & logistics service for National IT Competition for Youth with disabilities (NITC)",
-    "org": "Bangladesh Computer Council",
-    "district": "Dhaka",
-    "date": "2026-06-22",
-    "source": "BCC",
-    "source_url": "https://bcc.gov.bd/pages/tenders",
-    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/5/70fd636e-83b7-4a34-88e5-e36bdceacdd0.pdf",
-    "view_url": "",
-    "id": 16,
-    "category": "ICT Services"
-  },
-  {
     "title": "Letter of Acceptance (LOA) for \"Design, Develop, Implementation of Operation & QoS Monitoring System of Fixed Broadband Operators for BTRC”",
     "org": "Bangladesh Telecommunication Regulatory Commission",
     "district": "Dhaka",
@@ -200,7 +188,7 @@ const TENDERS = [
     "source_url": "https://btrc.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/5/60c8725e-8111-483e-90bf-aab0f75f1b25.pdf",
     "view_url": "",
-    "id": 17,
+    "id": 16,
     "category": "ICT Infrastructure"
   },
   {
@@ -212,7 +200,7 @@ const TENDERS = [
     "source_url": "https://btcl.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2026/0/b783e3ea-b8cb-4ec1-81f1-417084561dcf.pdf",
     "view_url": "",
-    "id": 18,
+    "id": 17,
     "category": "Software & Web"
   },
   {
@@ -224,7 +212,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/fac66dbe21b443a3bdf3cf7e2290f5b7.pdf",
     "view_url": "",
-    "id": 19,
+    "id": 18,
     "category": "ICT Services"
   },
   {
@@ -236,7 +224,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/78d738f7c9dc4afaa0ba05a015fdf6ec.pdf",
     "view_url": "",
-    "id": 20,
+    "id": 19,
     "category": "Software & Web"
   },
   {
@@ -248,7 +236,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/f570d3b8c7bd4acb9b317fdb37b5d708.pdf",
     "view_url": "",
-    "id": 21,
+    "id": 20,
     "category": "ICT Services"
   },
   {
@@ -260,7 +248,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/48ee44c987b543a5ab9d248e9fe4d066.pdf",
     "view_url": "",
-    "id": 22,
+    "id": 21,
     "category": "ICT Infrastructure"
   },
   {
@@ -272,7 +260,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/aca337d999594d3d9ac2bef5d7700f38.pdf",
     "view_url": "",
-    "id": 23,
+    "id": 22,
     "category": "Consulting"
   },
   {
@@ -284,7 +272,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/1c9d782dbafe4fc0a7d6dc42e480bea6.pdf",
     "view_url": "",
-    "id": 24,
+    "id": 23,
     "category": "ICT Services"
   },
   {
@@ -296,7 +284,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/f369a15f73f84754a024a441918d18dc.pdf",
     "view_url": "",
-    "id": 25,
+    "id": 24,
     "category": "Software & Web"
   },
   {
@@ -308,7 +296,7 @@ const TENDERS = [
     "source_url": "https://doict.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/e3ab56caacfc40178c6149d9dbda4b35.pdf",
     "view_url": "",
-    "id": 26,
+    "id": 25,
     "category": "ICT Services"
   },
   {
@@ -320,7 +308,7 @@ const TENDERS = [
     "source_url": "https://doict.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/b15b5a4d372c4cdb8015d8e9dd212d54.pdf",
     "view_url": "",
-    "id": 27,
+    "id": 26,
     "category": "ICT Infrastructure"
   },
   {
@@ -332,7 +320,7 @@ const TENDERS = [
     "source_url": "https://doict.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/188dc2c66b8c4b5396a4a6d6773c6957.pdf",
     "view_url": "",
-    "id": 28,
+    "id": 27,
     "category": "ICT Infrastructure"
   },
   {
@@ -344,7 +332,7 @@ const TENDERS = [
     "source_url": "https://doict.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/b19f6829a5534bd0ab2a092ce5303ced.pdf",
     "view_url": "",
-    "id": 29,
+    "id": 28,
     "category": "ICT Infrastructure"
   },
   {
@@ -356,7 +344,7 @@ const TENDERS = [
     "source_url": "https://doict.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/eed4d187273244a594ca976f9f8f26d4.pdf",
     "view_url": "",
-    "id": 30,
+    "id": 29,
     "category": "Consulting"
   },
   {
@@ -368,7 +356,7 @@ const TENDERS = [
     "source_url": "https://doict.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/5933f8f20ddf46c0bec5f6d13ca1ef95.pdf",
     "view_url": "",
-    "id": 31,
+    "id": 30,
     "category": "ICT Services"
   },
   {
@@ -380,7 +368,7 @@ const TENDERS = [
     "source_url": "https://btcl.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/fe468cc9d2234702b648e3ac2db5b981.pdf",
     "view_url": "",
-    "id": 32,
+    "id": 31,
     "category": "Software & Web"
   },
   {
@@ -392,7 +380,7 @@ const TENDERS = [
     "source_url": "https://btcl.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/cfd1b8fe52a84f57908aa5ac5171a5aa.pdf",
     "view_url": "",
-    "id": 33,
+    "id": 32,
     "category": "Consulting"
   },
   {
@@ -404,7 +392,7 @@ const TENDERS = [
     "source_url": "https://btcl.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/f148c206e4664f11aa0b726e0a1e44ca.pdf",
     "view_url": "",
-    "id": 34,
+    "id": 33,
     "category": "Software & Web"
   },
   {
@@ -416,7 +404,7 @@ const TENDERS = [
     "source_url": "https://btcl.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/7f9a7244b0124c80a618421cd882519f.pdf",
     "view_url": "",
-    "id": 35,
+    "id": 34,
     "category": "Software & Web"
   },
   {
@@ -428,7 +416,7 @@ const TENDERS = [
     "source_url": "https://btcl.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/c314d0785c4140b1a62f81d7d416f125.pdf",
     "view_url": "",
-    "id": 36,
+    "id": 35,
     "category": "Software & Web"
   },
   {
@@ -440,7 +428,7 @@ const TENDERS = [
     "source_url": "https://btcl.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/4a82876989e7490b9ccd6c89f9b41d1f.pdf",
     "view_url": "",
-    "id": 37,
+    "id": 36,
     "category": "Software & Web"
   }
 ];
