@@ -1,5 +1,17 @@
 [
   {
+    "title": "Supply and Installation of Router, Firewall, Aggregation Switch, Server Farm Switch and Other Network Equipments for Prime Minister Office (PMO)",
+    "org": "Bangladesh Computer Council",
+    "district": "Dhaka",
+    "date": "2026-07-21",
+    "source": "BCC",
+    "source_url": "https://bcc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/6/6a977d2c-62f6-4549-b937-706e2312f531.pdf",
+    "view_url": "",
+    "id": 1,
+    "category": "ICT Infrastructure"
+  },
+  {
     "title": "e-Tender notice for Agreement for Procurement of Supply of Various Miscellaneous and Consumables Items for a2i Programme",
     "org": "ICT Division / a2i",
     "district": "Dhaka",
@@ -8,7 +20,7 @@
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2026/6/b23a6580-91be-4dcf-a551-9619e5cd7e17.pdf",
     "view_url": "",
-    "id": 1,
+    "id": 2,
     "category": "Software & Web"
   },
   {
@@ -20,7 +32,7 @@
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2026/6/34d62a71-3770-4fd8-96f7-27f6625c40a7.pdf",
     "view_url": "",
-    "id": 2,
+    "id": 3,
     "category": "ICT Services"
   },
   {
@@ -32,7 +44,7 @@
     "source_url": "https://bcc.gov.bd/pages/tenders",
     "pdf_url": "",
     "view_url": "",
-    "id": 3,
+    "id": 4,
     "category": "ICT Infrastructure"
   },
   {
@@ -44,7 +56,7 @@
     "source_url": "https://btcl.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2026/6/ac374839-cf6b-426b-b77a-1722f00c5d40.pdf",
     "view_url": "",
-    "id": 4,
+    "id": 5,
     "category": "Software & Web"
   },
   {
@@ -56,7 +68,7 @@
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2026/6/61816f4f-5b93-44f7-b48f-2cbf002c0c7f.pdf",
     "view_url": "",
-    "id": 5,
+    "id": 6,
     "category": "Consulting"
   },
   {
@@ -68,7 +80,7 @@
     "source_url": "https://btrc.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/6/a7b62abb-9054-4e08-8ddd-9803cd3f00aa.pdf",
     "view_url": "",
-    "id": 6,
+    "id": 7,
     "category": "ICT Infrastructure"
   },
   {
@@ -80,7 +92,7 @@
     "source_url": "https://btrc.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/6/fe955767-bd4e-46ff-b3bb-eb7368aef627.pdf",
     "view_url": "",
-    "id": 7,
+    "id": 8,
     "category": "Consulting"
   },
   {
@@ -92,20 +104,8 @@
     "source_url": "https://bcc.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/6/e76f3b8a-b852-4759-9132-380c417db43e.pdf",
     "view_url": "",
-    "id": 8,
-    "category": "ICT Services"
-  },
-  {
-    "title": "Supply and Installation of Router, Firewall, Aggregation Switch, Server Farm Switch and Other Network Equipment for Prime Minister Officer (PMO)",
-    "org": "Bangladesh Computer Council",
-    "district": "Dhaka",
-    "date": "2026-07-01",
-    "source": "BCC",
-    "source_url": "https://bcc.gov.bd/pages/tenders",
-    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/6/b86accf7-2851-4e00-a500-c67e33dcde19.pdf",
-    "view_url": "",
     "id": 9,
-    "category": "ICT Infrastructure"
+    "category": "ICT Services"
   },
   {
     "title": "Notification of Award (NOA) for \"Procurement of Dedicated Internet Bandwidth with Redundant Fiber Connectivity for BTRC.\"",
