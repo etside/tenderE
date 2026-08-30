@@ -1,5 +1,197 @@
 const TENDERS = [
   {
+    "title": "Supply and installation of PVC Floor Tiles, removing old existing PVC Floor Tiles, installation Digital Basin Mirror and repair under basin Cabinet at level-1",
+    "org": "Bangladesh Computer Council",
+    "district": "Dhaka",
+    "date": "2026-08-23",
+    "source": "BCC",
+    "source_url": "https://bcc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/7/163bf981-e65a-48c2-9250-fbd6531b16a1.pdf",
+    "view_url": "",
+    "id": 1,
+    "category": "ICT Services"
+  },
+  {
+    "title": "Notification of Award (NOA) for \"Procurement of Portable/Semi-Fixed and Mobile Spectrum Monitoring System.\"",
+    "org": "Bangladesh Telecommunication Regulatory Commission",
+    "district": "Dhaka",
+    "date": "2026-08-20",
+    "source": "BTRC",
+    "source_url": "https://btrc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/7/f919ad79-414d-4e38-b48a-e7d0cc8098c8.pdf",
+    "view_url": "",
+    "id": 2,
+    "category": "Software & Web"
+  },
+  {
+    "title": "Corrigendum Notice Regarding Supply and Installation of integrated digital attendance monitoring & management system.",
+    "org": "Bangladesh Computer Council",
+    "district": "Dhaka",
+    "date": "2026-08-19",
+    "source": "BCC",
+    "source_url": "https://bcc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/7/b4576856-3708-4957-800a-e0f0e15ebd4b.pdf",
+    "view_url": "",
+    "id": 3,
+    "category": "ICT Infrastructure"
+  },
+  {
+    "title": "Invitation for Tender (IFT) for Procurement of Mobile handset Testing Lab.",
+    "org": "Bangladesh Telecommunication Regulatory Commission",
+    "district": "Dhaka",
+    "date": "2026-08-12",
+    "source": "BTRC",
+    "source_url": "https://btrc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/7/45eaf203-e88f-45ec-95dd-ef97d8ff3275.pdf",
+    "view_url": "",
+    "id": 4,
+    "category": "Software & Web"
+  },
+  {
+    "title": "বাংলাদেশ সাবমেরিন কেবল কোম্পানী লিঃ এর ইনফরমেশন সিস্টেম অডিট কার্যক্রম পরিচালনার লক্ষ্যে অডিট ফার্ম নিয়োগের উদ্দেশ্যে প্রাপ্ত আগ্রহব্যক্তকরণ দলিল (EOI) মূল্যায়ণ শেষে সংক্ষিপ্ত তালিকাভুক্তি প্রসঙ্গে।",
+    "org": "Bangladesh Telecommunication Regulatory Commission",
+    "district": "Dhaka",
+    "date": "2026-08-12",
+    "source": "BTRC",
+    "source_url": "https://btrc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/7/7dfae8e4-4a04-4b10-a188-39d9f51c1c52.pdf",
+    "view_url": "",
+    "id": 5,
+    "category": "Consulting"
+  },
+  {
+    "title": "Supply and Installation of integrated digital attendance monitoring & management system.",
+    "org": "Bangladesh Computer Council",
+    "district": "Dhaka",
+    "date": "2026-08-06",
+    "source": "BCC",
+    "source_url": "https://bcc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/7/ab7717c7-6dbf-41ee-a343-756ace9001ed.pdf",
+    "view_url": "",
+    "id": 6,
+    "category": "ICT Infrastructure"
+  },
+  {
+    "title": "Supply, Installation and Comissoning of 270 nos of 12V 200Ah Battery for NDC-4",
+    "org": "Bangladesh Computer Council",
+    "district": "Dhaka",
+    "date": "2026-08-04",
+    "source": "BCC",
+    "source_url": "https://bcc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/7/d3df9f38-83eb-4013-8a04-521b6ba9292b.pdf",
+    "view_url": "",
+    "id": 7,
+    "category": "Software & Web"
+  },
+  {
+    "title": "Regarding the shortlisting of audit firms for the Expressions of Interest (EOI) to conduct all accounting-related activities for the Commission for 2025-2026 fiscal year.",
+    "org": "Bangladesh Telecommunication Regulatory Commission",
+    "district": "Dhaka",
+    "date": "2026-07-22",
+    "source": "BTRC",
+    "source_url": "https://btrc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/7/c220cf3f-49f4-44f9-b11a-32c407f1507f.pdf",
+    "view_url": "",
+    "id": 8,
+    "category": "Software & Web"
+  },
+  {
+    "title": "Supply, Installation, Testing, Commissioning and Operationalization of a Tier-III Concurrently Maintainable Multi-Tenant Telco Cloud and Digital Services Data Center Platform and Related Facilities for BTCL on Turnkey Basis (International) (GD3)",
+    "org": "Bangladesh Telecommunications Company Ltd",
+    "district": "Dhaka",
+    "date": "2026-07-15",
+    "source": "BTCL",
+    "source_url": "https://btcl.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2026/6/ac374839-cf6b-426b-b77a-1722f00c5d40.pdf",
+    "view_url": "",
+    "id": 9,
+    "category": "Software & Web"
+  },
+  {
+    "title": "Notification of Award (NOA) for Procurement of IT retail equipments (Mouse, Keyboard, Pendrive etc.) for BTRC.",
+    "org": "Bangladesh Telecommunication Regulatory Commission",
+    "district": "Dhaka",
+    "date": "2026-07-12",
+    "source": "BTRC",
+    "source_url": "https://btrc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/6/a7b62abb-9054-4e08-8ddd-9803cd3f00aa.pdf",
+    "view_url": "",
+    "id": 10,
+    "category": "ICT Infrastructure"
+  },
+  {
+    "title": "রবি আজিয়াটা লিঃ এর ইনফরমেশন সিস্টেম অডিট কার্যক্রম পরিচালনার লক্ষ্যে অডিট ফার্ম নিয়োগের উদ্দেশ্যে প্রাপ্ত আগ্রহব্যক্তকরণ দলিল (EOI) মূল্যায়ণ শেষে সংক্ষিপ্ত তালিকাভুক্তি প্রসঙ্গে।",
+    "org": "Bangladesh Telecommunication Regulatory Commission",
+    "district": "Dhaka",
+    "date": "2026-07-06",
+    "source": "BTRC",
+    "source_url": "https://btrc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/6/fe955767-bd4e-46ff-b3bb-eb7368aef627.pdf",
+    "view_url": "",
+    "id": 11,
+    "category": "Consulting"
+  },
+  {
+    "title": "Notification of Award (NOA) for \"Procurement of Dedicated Internet Bandwidth with Redundant Fiber Connectivity for BTRC.\"",
+    "org": "Bangladesh Telecommunication Regulatory Commission",
+    "district": "Dhaka",
+    "date": "2026-06-30",
+    "source": "BTRC",
+    "source_url": "https://btrc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/6/7d88bd8f-07e4-4c17-915e-db1448655915.pdf",
+    "view_url": "",
+    "id": 12,
+    "category": "ICT Infrastructure"
+  },
+  {
+    "title": "Request for Experssion of Interest (EOI) for Selection of Consulting / Audit Firm For Conducting Financial Audit of BTRC.",
+    "org": "Bangladesh Telecommunication Regulatory Commission",
+    "district": "Dhaka",
+    "date": "2026-06-29",
+    "source": "BTRC",
+    "source_url": "https://btrc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/6/634a7c25-c5e3-429f-a159-4eff01a7d6b2.pdf",
+    "view_url": "",
+    "id": 13,
+    "category": "Consulting"
+  },
+  {
+    "title": "Procurement of Feasibility Study for the expansion of government`s video conferencing platform of BCC",
+    "org": "Bangladesh Computer Council",
+    "district": "Dhaka",
+    "date": "2026-06-25",
+    "source": "BCC",
+    "source_url": "https://bcc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bcc/2026/5/4bde72ee-a8a7-482e-b8b6-0f73859cc024.pdf",
+    "view_url": "",
+    "id": 14,
+    "category": "Software & Web"
+  },
+  {
+    "title": "Notification of Award (NOA) for Procurement of Update and Annual Maintenance Contract of Telecom Data Information System (DIS)",
+    "org": "Bangladesh Telecommunication Regulatory Commission",
+    "district": "Dhaka",
+    "date": "2026-06-25",
+    "source": "BTRC",
+    "source_url": "https://btrc.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btrc/2026/6/2a99c2ec-1155-4f01-8d20-14d376dff118.pdf",
+    "view_url": "",
+    "id": 15,
+    "category": "AI & Data"
+  },
+  {
+    "title": "“The selection of consulting firm to determine the specifications of BTCL’s ERP Software”",
+    "org": "Bangladesh Telecommunications Company Ltd",
+    "district": "Dhaka",
+    "date": "2026-01-22",
+    "source": "BTCL",
+    "source_url": "https://btcl.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2026/0/b783e3ea-b8cb-4ec1-81f1-417084561dcf.pdf",
+    "view_url": "",
+    "id": 16,
+    "category": "Software & Web"
+  },
+  {
     "title": "e-Tender Notice (Procurement of Technology Tools)",
     "org": "ICT Division / a2i",
     "district": "Dhaka",
@@ -8,7 +200,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/fac66dbe21b443a3bdf3cf7e2290f5b7.pdf",
     "view_url": "",
-    "id": 1,
+    "id": 17,
     "category": "ICT Services"
   },
   {
@@ -20,7 +212,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/78d738f7c9dc4afaa0ba05a015fdf6ec.pdf",
     "view_url": "",
-    "id": 2,
+    "id": 18,
     "category": "Software & Web"
   },
   {
@@ -32,7 +224,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/f570d3b8c7bd4acb9b317fdb37b5d708.pdf",
     "view_url": "",
-    "id": 3,
+    "id": 19,
     "category": "ICT Services"
   },
   {
@@ -44,7 +236,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/48ee44c987b543a5ab9d248e9fe4d066.pdf",
     "view_url": "",
-    "id": 4,
+    "id": 20,
     "category": "ICT Infrastructure"
   },
   {
@@ -56,7 +248,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/aca337d999594d3d9ac2bef5d7700f38.pdf",
     "view_url": "",
-    "id": 5,
+    "id": 21,
     "category": "Consulting"
   },
   {
@@ -68,7 +260,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/1c9d782dbafe4fc0a7d6dc42e480bea6.pdf",
     "view_url": "",
-    "id": 6,
+    "id": 22,
     "category": "ICT Services"
   },
   {
@@ -80,7 +272,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/f369a15f73f84754a024a441918d18dc.pdf",
     "view_url": "",
-    "id": 7,
+    "id": 23,
     "category": "Software & Web"
   },
   {
@@ -92,7 +284,7 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/4527ec93f2394f16903e7cdb16d52ed1.pdf",
     "view_url": "",
-    "id": 8,
+    "id": 24,
     "category": "ICT Services"
   },
   {
@@ -104,8 +296,152 @@ const TENDERS = [
     "source_url": "https://ictd.gov.bd/pages/tenders",
     "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-ictd/2024/12/f0098d496d0046a6a956706fbfcbe8e5.pdf",
     "view_url": "",
-    "id": 9,
+    "id": 25,
     "category": "Consulting"
+  },
+  {
+    "title": "CCA: Enlistment of Audit Firms for Conducting Audit of Certifying Authorities (CAs)",
+    "org": "Department of ICT",
+    "district": "Dhaka",
+    "date": "2025-10-30",
+    "source": "DoICT",
+    "source_url": "https://doict.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/e3ab56caacfc40178c6149d9dbda4b35.pdf",
+    "view_url": "",
+    "id": 26,
+    "category": "ICT Services"
+  },
+  {
+    "title": "ডিজিটাল সংযোগ স্থাপন (ইডিসি) প্রকল্পের আওতায় দেশের সরকারি ও বেসরকারি বিভিন্ন প্রতিষ্ঠানে End User Connectivity প্রদানের নিমিত্ত (ক) প্যাকেজ নং SD-141 এর আওতায় চাঁদপুর জেলা; (খ) প্যাকেজ নং SD-143 এর আওতায় কুমিল্লা (উত্তর); এবং (গ) প্যাকেজ নং SD-144",
+    "org": "Department of ICT",
+    "district": "Dhaka",
+    "date": "2025-10-22",
+    "source": "DoICT",
+    "source_url": "https://doict.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/b15b5a4d372c4cdb8015d8e9dd212d54.pdf",
+    "view_url": "",
+    "id": 27,
+    "category": "ICT Infrastructure"
+  },
+  {
+    "title": "ডিজিটাল সংযোগ স্থাপন (ইডিসি) প্রকল্পের আওতায় For Selecting Internet Service Provider (ISP) to provide End User Connectivity service for educational institutions, community clinics and government offices up to union level এর প্যাকেজ নং SD-141 এর আওতা",
+    "org": "Department of ICT",
+    "district": "Dhaka",
+    "date": "2025-10-19",
+    "source": "DoICT",
+    "source_url": "https://doict.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/188dc2c66b8c4b5396a4a6d6773c6957.pdf",
+    "view_url": "",
+    "id": 28,
+    "category": "ICT Infrastructure"
+  },
+  {
+    "title": "ইডিসি প্রকল্পঃ Internet Service Provider (ISP) to provide End User Connectivity service for educational institutions, community clinics and government offices up to union level.",
+    "org": "Department of ICT",
+    "district": "Dhaka",
+    "date": "2025-08-28",
+    "source": "DoICT",
+    "source_url": "https://doict.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/b19f6829a5534bd0ab2a092ce5303ced.pdf",
+    "view_url": "",
+    "id": 29,
+    "category": "ICT Infrastructure"
+  },
+  {
+    "title": "EDC: Expression of Interest (EOI) and ToR for \"Project Implementation Coordinator (Consultant) 1 (One) person\".",
+    "org": "Department of ICT",
+    "district": "Dhaka",
+    "date": "2025-08-04",
+    "source": "DoICT",
+    "source_url": "https://doict.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/eed4d187273244a594ca976f9f8f26d4.pdf",
+    "view_url": "",
+    "id": 30,
+    "category": "Consulting"
+  },
+  {
+    "title": "Hiring of Event Management Firm for Organizing Business Process Outsourcing (BPO) Summit Bangladesh 2025",
+    "org": "Department of ICT",
+    "district": "Dhaka",
+    "date": "2025-05-27",
+    "source": "DoICT",
+    "source_url": "https://doict.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-doict/2024/12/5933f8f20ddf46c0bec5f6d13ca1ef95.pdf",
+    "view_url": "",
+    "id": 31,
+    "category": "ICT Services"
+  },
+  {
+    "title": "Ref:14.33.0000.313.14.004.23-102 Selection of Individual Consultants (National) for Services of Supply, Installation, Testing and Commissioning of standard Platform for ,bd and .bangla Domain Hosting , Colocation , Virtual Machine, Cloud Computing et",
+    "org": "Bangladesh Telecommunications Company Ltd",
+    "district": "Dhaka",
+    "date": "2024-05-19",
+    "source": "BTCL",
+    "source_url": "https://btcl.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/fe468cc9d2234702b648e3ac2db5b981.pdf",
+    "view_url": "",
+    "id": 32,
+    "category": "Software & Web"
+  },
+  {
+    "title": "Ref:14.33.0000.046.18.002.22-11(21) Request for Proposal (RFP) for Rent switch, hard patching, support service etc at STT DC, Kolkata, India to Enhance BTCL’s Internet Service",
+    "org": "Bangladesh Telecommunications Company Ltd",
+    "district": "Dhaka",
+    "date": "2024-04-28",
+    "source": "BTCL",
+    "source_url": "https://btcl.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/cfd1b8fe52a84f57908aa5ac5171a5aa.pdf",
+    "view_url": "",
+    "id": 33,
+    "category": "Consulting"
+  },
+  {
+    "title": "Ref:14.33.0000.313.14.016.22-400 Supply, Testing , Installation and Commisioning of Routers/Switches at Equinix PoP in Singapore, Marseille PoP in France and Kolkata PoP in India to enhance the Capacity of BTCL IIG on Full Turn-Key Basis (NCT)",
+    "org": "Bangladesh Telecommunications Company Ltd",
+    "district": "Dhaka",
+    "date": "2024-04-21",
+    "source": "BTCL",
+    "source_url": "https://btcl.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/f148c206e4664f11aa0b726e0a1e44ca.pdf",
+    "view_url": "",
+    "id": 34,
+    "category": "Software & Web"
+  },
+  {
+    "title": "Supply, Installation, Testing And Commissioning of Optical Fiber Outside Plant Works To Connect Different (48) Banglalink Nodes/Sites to BTCL’s OFC Point under Mymensingh, Jamalpur, Sherpur, Netrokona, Kishoregong & Tangail Region",
+    "org": "Bangladesh Telecommunications Company Ltd",
+    "district": "Dhaka",
+    "date": "2023-04-04",
+    "source": "BTCL",
+    "source_url": "https://btcl.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/7f9a7244b0124c80a618421cd882519f.pdf",
+    "view_url": "",
+    "id": 35,
+    "category": "Software & Web"
+  },
+  {
+    "title": "upply, Installation, testing and Commissioning of Transmission , GPON, IP, OSP and related Ancillary Equipment at Jamalpur and Sreebatta EPZ area for ITNEZ Project",
+    "org": "Bangladesh Telecommunications Company Ltd",
+    "district": "Dhaka",
+    "date": "2023-02-15",
+    "source": "BTCL",
+    "source_url": "https://btcl.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/c314d0785c4140b1a62f81d7d416f125.pdf",
+    "view_url": "",
+    "id": 36,
+    "category": "Software & Web"
+  },
+  {
+    "title": "Selection of Individual Consultants (National) for Services of Designing , Preparing Tender Documents , Monitoring and Supervision for for the Transmission Network System , IP network System and Network Secuirity System to be deployed under \" Establi",
+    "org": "Bangladesh Telecommunications Company Ltd",
+    "district": "Dhaka",
+    "date": "2022-12-07",
+    "source": "BTCL",
+    "source_url": "https://btcl.gov.bd/pages/tenders",
+    "pdf_url": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-btcl/2024/12/4a82876989e7490b9ccd6c89f9b41d1f.pdf",
+    "view_url": "",
+    "id": 37,
+    "category": "Software & Web"
   }
 ];
 
